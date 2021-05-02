@@ -1,0 +1,5 @@
+(library
+ (name binstore)
+ (libraries core lwt sqlite3 bin_prot)
+ (preprocess
+  (pps ppx_string ppx_pipebang ppx_let ppx_bin_prot ppx_compare)))

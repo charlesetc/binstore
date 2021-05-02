@@ -1,0 +1,12 @@
+(executable
+ (name main)
+ (libraries binstore)
+ (preprocess
+  (pps
+   ppx_string
+   ppx_pipebang
+   ppx_let
+   ppx_yojson_conv
+   ppx_sexp_conv
+   ppx_bin_prot
+   ppx_compare)))
